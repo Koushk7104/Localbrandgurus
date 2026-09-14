@@ -539,9 +539,9 @@ function App() {
         // ── Campaign section: pin on mobile, parallax on desktop ──
         if (isMobile()) {
           gsap.fromTo('.phone-wrap',
-            { y: -80, opacity: 0, rotate: -5 },
+            { y: -80, rotate: -5 },
             {
-              y: 0, opacity: 1, rotate: 3, ease: 'none',
+              y: 0, rotate: 3, ease: 'none',
               scrollTrigger: {
                 trigger: '.campaign-section',
                 start: 'top top',
