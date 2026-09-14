@@ -1,0 +1,10 @@
+@import url('../styles.css');
+
+.react-app .site-loader { transform: translateY(0); }
+.react-app .loader-line span { transition: width .08s linear; }
+.react-app .line-inner, .react-app .reveal-up { transform: translateY(105%); opacity: 0; }
+.react-app .chart-line { stroke-dasharray: 1100; stroke-dashoffset: 1100; }
+.react-app .chart-fill { opacity: 0; }
+.react-app .menu-trigger { cursor: pointer; }
+.react-app .cta-bottom a { color: inherit; }
+.react-app .cta-button, .react-app .text-link, .react-app .work-item { cursor: pointer; }
