@@ -523,8 +523,7 @@ function App() {
             scrollTrigger: {
               trigger: '.services-section',
               start: 'top top',
-              // Extra 1.5× viewport of scroll room so it never feels rushed
-              end: () => `+=${distance() + window.innerWidth * 1.5}`,
+              end: () => `+=${distance() + window.innerWidth * 0.5}`,
               scrub: 2.5,
               pin: '.services-sticky',
               anticipatePin: 1,
@@ -546,7 +545,7 @@ function App() {
               scrollTrigger: {
                 trigger: '.campaign-section',
                 start: 'top top',
-                end: '+=1400',   // much longer so phone anim breathes
+                end: '+=700',
                 scrub: 2,
                 pin: true,
                 pinSpacing: true,
@@ -576,8 +575,7 @@ function App() {
           scrollTrigger: {
             trigger: '.kinetic-section',
             start: 'top top',
-            // Mobile needs 2× more scroll distance so words finish clearing before GROWTH reveals
-            end: isMobile() ? '+=2000' : '+=1800',
+            end: isMobile() ? '+=1000' : '+=1800',
             scrub: 2,
             pin: true,
             pinSpacing: true,
@@ -605,7 +603,7 @@ function App() {
               scrollTrigger: {
                 trigger: '.work-section',
                 start: 'top top',
-                end: () => `+=${workDistance() + window.innerWidth}`,
+                end: () => `+=${workDistance() + window.innerWidth * 0.4}`,
                 scrub: 2.5,
                 pin: '.work-sticky',
                 pinSpacing: true,
